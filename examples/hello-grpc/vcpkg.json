@@ -1,0 +1,15 @@
+{
+    "name": "grpc-helloworld",
+    "version": "1.0.0",
+    "description": "A simple gRPC Helloworld example",
+    "dependencies": [
+        "grpc",
+        "protobuf",
+        "abseil",
+        "c-ares",
+        "re2",
+        "openssl",
+        "zlib"
+    ],
+    "builtin-baseline": "3426db05b996481ca31e95fff3734cf23e0f51bc"
+}
