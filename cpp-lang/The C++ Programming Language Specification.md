@@ -31,13 +31,16 @@ named entity
 
 ## 声明
 
-| 声明修饰符 | 描述 | 示例 ｜
+
+`type var_name;`
+
+| 声明修饰符 | 描述 | 示例 |
 | - | - | - |
 | * | 指针 | `char* name = "Njal";` |
 | & | 引用 | `int& ref = x;` |
 | *const | 指针常量 | - |
 | *volatile | | |
-| auto | 长整型 | `auto count = 1;` |
+| auto |  | `auto count = 1;` |
 | [] | 数组 | `int arr[5] = {1, 2, 3, 4, 5};` |
 | () | 函数 | `int func(int a, int b);` |
 | -> |  | `ptr->name` |
