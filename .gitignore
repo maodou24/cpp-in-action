@@ -40,3 +40,13 @@ build/
 
 
 */build/*
+
+## C++
+*.exe
+*.out
+# 编译中间产物
+*.o
+*.obj
+*.dll
+*.so
+*.dylib

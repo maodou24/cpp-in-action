@@ -31,7 +31,6 @@ named entity
 
 ## 声明
 
-
 `type var_name;`
 
 | 声明修饰符 | 描述 | 示例 |
@@ -53,4 +52,73 @@ auto count = 1;
 const double pi {3.1415926535897};
 
 const char* name = ""
+```
+
+## Tests
+
+### if
+
+```cpp
+if (condition)
+{
+    statement(s);
+}
+```
+
+### switch
+
+```cpp
+swtich(expression)
+{
+    case cond1 :
+        statement1(s);
+    case cond2 :
+        statement2(s);
+    default :  // optional
+        statement_default(s);
+}
+```
+
+## Loops
+
+循环控制语句：
+
+- continue;
+- break;
+- goto;
+
+### while
+
+```cpp
+while (condition)
+{
+   statement(s);
+}
+```
+
+### for
+
+```cpp
+for (condition)
+{
+    statement(s);
+}
+```
+
+### do while
+
+```cpp
+do
+{
+    statement(s);
+} while (condition);
+```
+
+## Function
+
+```cpp
+return_type function_name(type param_name)
+{
+    // body of the function
+}
 ```
