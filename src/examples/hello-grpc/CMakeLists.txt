@@ -6,11 +6,6 @@ project(hello_grpc VERSION 1.0.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 设置vcpkg工具链
-# set(CMAKE_TOOLCHAIN_FILE 
-#     "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake"
-#     CACHE STRING "Vcpkg toolchain file")
-
 # 开启vcpkg清单模式
 set(VCPKG_MANIFEST_MODE ON)
 
@@ -55,6 +50,7 @@ include_directories(
 add_executable(greeter_server
     src/server/greeter_server.cc
     ${PROTO_SRCS}
+    ${ALL_GRPC_SRCS}
     ${ALL_GRPC_HDRS}
 )
 
@@ -70,10 +66,11 @@ target_link_libraries(greeter_server
 add_executable(greeter_client
     src/client/greeter_client.cc
     ${PROTO_SRCS}
+    ${ALL_GRPC_SRCS}
     ${ALL_GRPC_HDRS}
 )
 
-target_link_libraries(greeer_client
+target_link_libraries(greeter_client
     gRPC::grpc++
     protobuf::libprotobuf
     absl::any

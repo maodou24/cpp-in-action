@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-VCPKG_ROOT="$HOME/tools/vcpkg"
+VCPKG_ROOT="$HOME/opt/vcpkg"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     OS="macOS"
